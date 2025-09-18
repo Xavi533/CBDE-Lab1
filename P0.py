@@ -4,11 +4,11 @@ from psycopg2.extras import execute_values
 
 CHUNKS_DIR = "chunks"
 MAX_ROWS = 10000
-HOST = os.getenv("PGHOST", "localhost")
-PORT = int(os.getenv("PGPORT", "5433"))
-DBNAME = os.getenv("PGDATABASE", "postgres")
-USER = os.getenv("PGUSER", "postgres")
-PASSWORD = os.getenv("PGPASSWORD", "1234")
+HOST = os.getenv("PGHOST")
+PORT = int(os.getenv("PGPORT"))
+DBNAME = os.getenv("PGDATABASE")
+USER = os.getenv("PGUSER")
+PASSWORD = os.getenv("PGPASSWORD")
 TABLE = "book_sentences"
 
 files = sorted(glob.glob(os.path.join(CHUNKS_DIR, "chunk_*.txt")))
