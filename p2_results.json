@@ -1,0 +1,360 @@
+{
+  "selected": [
+    {
+      "id": 1,
+      "sentence": "the half-ling book one in the fall of igneeria series kaylee soderburg copyright 2013 kaylee soderburg all rights reserved ."
+    },
+    {
+      "id": 2,
+      "sentence": "isbn : 1492913731 isbn-13 : 978-1492913733 for my family , who encouraged me to never stop fighting for my dreams chapter 1 summer vacations supposed to be fun , right ?"
+    },
+    {
+      "id": 3,
+      "sentence": "i wish i had a better answer to that question ."
+    },
+    {
+      "id": 4,
+      "sentence": "starlings , new york is not the place youd expect much to happen ."
+    },
+    {
+      "id": 5,
+      "sentence": "its a small quiet town , the kind where everyone knows your name ."
+    },
+    {
+      "id": 6,
+      "sentence": "its a place where your parents wouldnt even care if you stayed out late biking with your friends ."
+    },
+    {
+      "id": 7,
+      "sentence": "only because everyone felt so safe , so comfy ."
+    },
+    {
+      "id": 8,
+      "sentence": "they dont know the half of it ."
+    },
+    {
+      "id": 9,
+      "sentence": "but i do ."
+    },
+    {
+      "id": 10,
+      "sentence": "i know it all and starlings is not the place where you want to be after dark ."
+    }
+  ],
+  "results": [
+    {
+      "query_id": 1,
+      "query_sentence": "the half-ling book one in the fall of igneeria series kaylee soderburg copyright 2013 kaylee soderburg all rights reserved .",
+      "top2": {
+        "cosine": [
+          {
+            "id": 4901,
+            "similarity": 0.5642396101001795,
+            "sentence": "dont miss book two in the fall of igneeria series !"
+          },
+          {
+            "id": 3051,
+            "similarity": 0.45613652963976814,
+            "sentence": "no , half-ling ."
+          }
+        ],
+        "euclidean": [
+          {
+            "id": 4901,
+            "distance": 0.9335527690382612,
+            "sentence": "dont miss book two in the fall of igneeria series !"
+          },
+          {
+            "id": 3051,
+            "distance": 1.0429414987634977,
+            "sentence": "no , half-ling ."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": 2,
+      "query_sentence": "isbn : 1492913731 isbn-13 : 978-1492913733 for my family , who encouraged me to never stop fighting for my dreams chapter 1 summer vacations supposed to be fun , right ?",
+      "top2": {
+        "cosine": [
+          {
+            "id": 4901,
+            "similarity": 0.454427344367859,
+            "sentence": "dont miss book two in the fall of igneeria series !"
+          },
+          {
+            "id": 5529,
+            "similarity": 0.40128760779411937,
+            "sentence": "`` you 've been reading that book again ."
+          }
+        ],
+        "euclidean": [
+          {
+            "id": 4901,
+            "distance": 1.0445790126298524,
+            "sentence": "dont miss book two in the fall of igneeria series !"
+          },
+          {
+            "id": 5529,
+            "distance": 1.09426907855081,
+            "sentence": "`` you 've been reading that book again ."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": 3,
+      "query_sentence": "i wish i had a better answer to that question .",
+      "top2": {
+        "cosine": [
+          {
+            "id": 4377,
+            "similarity": 0.4923576944149555,
+            "sentence": "you really got to stop asking that question ."
+          },
+          {
+            "id": 1173,
+            "similarity": 0.447649393201798,
+            "sentence": "no answer again ."
+          }
+        ],
+        "euclidean": [
+          {
+            "id": 4377,
+            "distance": 1.0076133640367986,
+            "sentence": "you really got to stop asking that question ."
+          },
+          {
+            "id": 1173,
+            "distance": 1.0510476829465787,
+            "sentence": "no answer again ."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": 4,
+      "query_sentence": "starlings , new york is not the place youd expect much to happen .",
+      "top2": {
+        "cosine": [
+          {
+            "id": 10,
+            "similarity": 0.5688049028976471,
+            "sentence": "i know it all and starlings is not the place where you want to be after dark ."
+          },
+          {
+            "id": 5958,
+            "similarity": 0.3811261225979839,
+            "sentence": "`` not just in the big cities ."
+          }
+        ],
+        "euclidean": [
+          {
+            "id": 10,
+            "distance": 0.9286496061424943,
+            "sentence": "i know it all and starlings is not the place where you want to be after dark ."
+          },
+          {
+            "id": 5958,
+            "distance": 1.1125411020467675,
+            "sentence": "`` not just in the big cities ."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": 5,
+      "query_sentence": "its a small quiet town , the kind where everyone knows your name .",
+      "top2": {
+        "cosine": [
+          {
+            "id": 8431,
+            "similarity": 0.45413392537804603,
+            "sentence": "a medium-sized town on the outskirts of cochabamba ."
+          },
+          {
+            "id": 8570,
+            "similarity": 0.42797471531812786,
+            "sentence": "i 've heard of that place -- -it 's famous all over the country ."
+          }
+        ],
+        "euclidean": [
+          {
+            "id": 8431,
+            "distance": 1.0448598966755132,
+            "sentence": "a medium-sized town on the outskirts of cochabamba ."
+          },
+          {
+            "id": 8570,
+            "distance": 1.0696030100789806,
+            "sentence": "i 've heard of that place -- -it 's famous all over the country ."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": 6,
+      "query_sentence": "its a place where your parents wouldnt even care if you stayed out late biking with your friends .",
+      "top2": {
+        "cosine": [
+          {
+            "id": 600,
+            "similarity": 0.5267530977962906,
+            "sentence": "thats where we parked our bikes ."
+          },
+          {
+            "id": 1133,
+            "similarity": 0.46048360649777303,
+            "sentence": "we hid our bikes in the trees and snuck up to their backyard ."
+          }
+        ],
+        "euclidean": [
+          {
+            "id": 600,
+            "distance": 0.9728791198433512,
+            "sentence": "thats where we parked our bikes ."
+          },
+          {
+            "id": 1133,
+            "distance": 1.038765052343698,
+            "sentence": "we hid our bikes in the trees and snuck up to their backyard ."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": 7,
+      "query_sentence": "only because everyone felt so safe , so comfy .",
+      "top2": {
+        "cosine": [
+          {
+            "id": 6966,
+            "similarity": 0.5733887628040378,
+            "sentence": "thankfully , it looked like everyone was in their tents snoring ."
+          },
+          {
+            "id": 1229,
+            "similarity": 0.5310706134224854,
+            "sentence": "out of all the places weve all been , this place felt the safest , as if it were surrounded by a good force , not bad for once ."
+          }
+        ],
+        "euclidean": [
+          {
+            "id": 6966,
+            "distance": 0.9237004337650456,
+            "sentence": "thankfully , it looked like everyone was in their tents snoring ."
+          },
+          {
+            "id": 1229,
+            "distance": 0.9684311140190149,
+            "sentence": "out of all the places weve all been , this place felt the safest , as if it were surrounded by a good force , not bad for once ."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": 8,
+      "query_sentence": "they dont know the half of it .",
+      "top2": {
+        "cosine": [
+          {
+            "id": 9119,
+            "similarity": 0.6155253209048622,
+            "sentence": "they must not know ."
+          },
+          {
+            "id": 712,
+            "similarity": 0.5725471434676718,
+            "sentence": "they hardly tell us anything as it is ."
+          }
+        ],
+        "euclidean": [
+          {
+            "id": 9119,
+            "distance": 0.8768975772311232,
+            "sentence": "they must not know ."
+          },
+          {
+            "id": 712,
+            "distance": 0.924611110098838,
+            "sentence": "they hardly tell us anything as it is ."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": 9,
+      "query_sentence": "but i do .",
+      "top2": {
+        "cosine": [
+          {
+            "id": 116,
+            "similarity": 0.653323458861724,
+            "sentence": "but you didnt ."
+          },
+          {
+            "id": 714,
+            "similarity": 0.5624703455143427,
+            "sentence": "i did ."
+          }
+        ],
+        "euclidean": [
+          {
+            "id": 116,
+            "distance": 0.8326782562264852,
+            "sentence": "but you didnt ."
+          },
+          {
+            "id": 714,
+            "distance": 0.9354460330818721,
+            "sentence": "i did ."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": 10,
+      "query_sentence": "i know it all and starlings is not the place where you want to be after dark .",
+      "top2": {
+        "cosine": [
+          {
+            "id": 4,
+            "similarity": 0.5688049028976471,
+            "sentence": "starlings , new york is not the place youd expect much to happen ."
+          },
+          {
+            "id": 4872,
+            "similarity": 0.510661877405566,
+            "sentence": "you cant unleash the nights circle without all of you ."
+          }
+        ],
+        "euclidean": [
+          {
+            "id": 4,
+            "distance": 0.9286496061424943,
+            "sentence": "starlings , new york is not the place youd expect much to happen ."
+          },
+          {
+            "id": 4872,
+            "distance": 0.9892806375852903,
+            "sentence": "you cant unleash the nights circle without all of you ."
+          }
+        ]
+      }
+    }
+  ],
+  "timing_summary_ms": {
+    "cosine": {
+      "min": 0.5108000004838686,
+      "max": 0.6958999983908143,
+      "avg": 0.5859399996552384,
+      "std": 0.06236446453259811
+    },
+    "euclidean": {
+      "min": 18.503799998143222,
+      "max": 19.47860000291257,
+      "avg": 18.833330000779824,
+      "std": 0.26244969159079345
+    }
+  }
+}
