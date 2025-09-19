@@ -1,0 +1,360 @@
+{
+  "selected": [
+    {
+      "id": "chunk_0.txt:0",
+      "sentence": "the half-ling book one in the fall of igneeria series kaylee soderburg copyright 2013 kaylee soderburg all rights reserved ."
+    },
+    {
+      "id": "chunk_0.txt:1",
+      "sentence": "isbn : 1492913731 isbn-13 : 978-1492913733 for my family , who encouraged me to never stop fighting for my dreams chapter 1 summer vacations supposed to be fun , right ?"
+    },
+    {
+      "id": "chunk_0.txt:10",
+      "sentence": "the only reason why no one knows this is because jason , emily , seth and i have kept it that way ."
+    },
+    {
+      "id": "chunk_0.txt:100",
+      "sentence": "his sword was gripped tightly in his clenched fingers and a look of amusement , or many it was anger , shone on his face ."
+    },
+    {
+      "id": "chunk_0.txt:101",
+      "sentence": "i swallowed and collected my weapons from the ground , not daring to look at my leg ."
+    },
+    {
+      "id": "chunk_0.txt:102",
+      "sentence": "hi seth , this is unexpected ."
+    },
+    {
+      "id": "chunk_0.txt:103",
+      "sentence": "seth glared at me and pulled me up ."
+    },
+    {
+      "id": "chunk_0.txt:104",
+      "sentence": "he was definitely angry at me ."
+    },
+    {
+      "id": "chunk_0.txt:105",
+      "sentence": "i tried to place weight on my leg but winced as pain shot up it ."
+    },
+    {
+      "id": "chunk_0.txt:106",
+      "sentence": "he kicked the dead thrasher one more time before sheathing his sword ."
+    }
+  ],
+  "results": [
+    {
+      "query_id": "chunk_0.txt:0",
+      "query_sentence": "the half-ling book one in the fall of igneeria series kaylee soderburg copyright 2013 kaylee soderburg all rights reserved .",
+      "top2": {
+        "cosine": [
+          {
+            "id": "chunk_3.txt:900",
+            "similarity": 0.5642396617295714,
+            "sentence": "dont miss book two in the fall of igneeria series !"
+          },
+          {
+            "id": "chunk_2.txt:50",
+            "similarity": 0.4561364515773412,
+            "sentence": "no , half-ling ."
+          }
+        ],
+        "euclidean": [
+          {
+            "id": "chunk_3.txt:900",
+            "distance": 0.9335527529159582,
+            "sentence": "dont miss book two in the fall of igneeria series !"
+          },
+          {
+            "id": "chunk_2.txt:50",
+            "distance": 1.042941565012337,
+            "sentence": "no , half-ling ."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "chunk_0.txt:1",
+      "query_sentence": "isbn : 1492913731 isbn-13 : 978-1492913733 for my family , who encouraged me to never stop fighting for my dreams chapter 1 summer vacations supposed to be fun , right ?",
+      "top2": {
+        "cosine": [
+          {
+            "id": "chunk_3.txt:900",
+            "similarity": 0.45442733390041423,
+            "sentence": "dont miss book two in the fall of igneeria series !"
+          },
+          {
+            "id": "chunk_4.txt:528",
+            "similarity": 0.4012876378050521,
+            "sentence": "`` you 've been reading that book again ."
+          }
+        ],
+        "euclidean": [
+          {
+            "id": "chunk_3.txt:900",
+            "distance": 1.0445790646709145,
+            "sentence": "dont miss book two in the fall of igneeria series !"
+          },
+          {
+            "id": "chunk_4.txt:528",
+            "distance": 1.0942690596876512,
+            "sentence": "`` you 've been reading that book again ."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "chunk_0.txt:10",
+      "query_sentence": "the only reason why no one knows this is because jason , emily , seth and i have kept it that way .",
+      "top2": {
+        "cosine": [
+          {
+            "id": "chunk_1.txt:167",
+            "similarity": 0.6809554427831562,
+            "sentence": "while emily and jason were bickering i said , seth ?"
+          },
+          {
+            "id": "chunk_3.txt:346",
+            "similarity": 0.6757321636409319,
+            "sentence": "i agree but are n't we supposed to be trying to find emily and jason ?"
+          }
+        ],
+        "euclidean": [
+          {
+            "id": "chunk_1.txt:167",
+            "distance": 0.7988048246460229,
+            "sentence": "while emily and jason were bickering i said , seth ?"
+          },
+          {
+            "id": "chunk_3.txt:346",
+            "distance": 0.8053171565877927,
+            "sentence": "i agree but are n't we supposed to be trying to find emily and jason ?"
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "chunk_0.txt:100",
+      "query_sentence": "his sword was gripped tightly in his clenched fingers and a look of amusement , or many it was anger , shone on his face .",
+      "top2": {
+        "cosine": [
+          {
+            "id": "chunk_1.txt:714",
+            "similarity": 0.6312036817501697,
+            "sentence": "he hissed , sword drawn ."
+          },
+          {
+            "id": "chunk_2.txt:877",
+            "similarity": 0.6242741530077778,
+            "sentence": "his hand went to his sword but he saw me and he relaxed ."
+          }
+        ],
+        "euclidean": [
+          {
+            "id": "chunk_1.txt:714",
+            "distance": 0.8588321705747546,
+            "sentence": "he hissed , sword drawn ."
+          },
+          {
+            "id": "chunk_2.txt:877",
+            "distance": 0.8668631507503723,
+            "sentence": "his hand went to his sword but he saw me and he relaxed ."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "chunk_0.txt:101",
+      "query_sentence": "i swallowed and collected my weapons from the ground , not daring to look at my leg .",
+      "top2": {
+        "cosine": [
+          {
+            "id": "chunk_0.txt:44",
+            "similarity": 0.619607452132961,
+            "sentence": "i placed my bag on the ground and crossed my legs ."
+          },
+          {
+            "id": "chunk_0.txt:283",
+            "similarity": 0.6185396210923642,
+            "sentence": "she had no weapons dangling from her body were visible from where i was standing ."
+          }
+        ],
+        "euclidean": [
+          {
+            "id": "chunk_0.txt:44",
+            "distance": 0.8722299704749119,
+            "sentence": "i placed my bag on the ground and crossed my legs ."
+          },
+          {
+            "id": "chunk_0.txt:283",
+            "distance": 0.8734533539296166,
+            "sentence": "she had no weapons dangling from her body were visible from where i was standing ."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "chunk_0.txt:102",
+      "query_sentence": "hi seth , this is unexpected .",
+      "top2": {
+        "cosine": [
+          {
+            "id": "chunk_3.txt:113",
+            "similarity": 0.6855756058613798,
+            "sentence": "wait , seth !"
+          },
+          {
+            "id": "chunk_3.txt:332",
+            "similarity": 0.6492854961540246,
+            "sentence": "seth , look !"
+          }
+        ],
+        "euclidean": [
+          {
+            "id": "chunk_3.txt:113",
+            "distance": 0.7929998815076433,
+            "sentence": "wait , seth !"
+          },
+          {
+            "id": "chunk_3.txt:332",
+            "distance": 0.8375135885344568,
+            "sentence": "seth , look !"
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "chunk_0.txt:103",
+      "query_sentence": "seth glared at me and pulled me up .",
+      "top2": {
+        "cosine": [
+          {
+            "id": "chunk_0.txt:593",
+            "similarity": 0.8190406300592458,
+            "sentence": "i glared at him , nice story seth , now what really happened ?"
+          },
+          {
+            "id": "chunk_0.txt:627",
+            "similarity": 0.7302078315748747,
+            "sentence": "seth shoved his hands in his pockets , and glared at the ground ."
+          }
+        ],
+        "euclidean": [
+          {
+            "id": "chunk_0.txt:593",
+            "distance": 0.6015968256636849,
+            "sentence": "i glared at him , nice story seth , now what really happened ?"
+          },
+          {
+            "id": "chunk_0.txt:627",
+            "distance": 0.7345640432131281,
+            "sentence": "seth shoved his hands in his pockets , and glared at the ground ."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "chunk_0.txt:104",
+      "query_sentence": "he was definitely angry at me .",
+      "top2": {
+        "cosine": [
+          {
+            "id": "chunk_5.txt:425",
+            "similarity": 0.8014343794763447,
+            "sentence": "he was angry ."
+          },
+          {
+            "id": "chunk_1.txt:245",
+            "similarity": 0.6194471395079256,
+            "sentence": "i felt something boil deep within me-the anger at him ."
+          }
+        ],
+        "euclidean": [
+          {
+            "id": "chunk_5.txt:425",
+            "distance": 0.6301834867364132,
+            "sentence": "he was angry ."
+          },
+          {
+            "id": "chunk_1.txt:245",
+            "distance": 0.8724136973903447,
+            "sentence": "i felt something boil deep within me-the anger at him ."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "chunk_0.txt:105",
+      "query_sentence": "i tried to place weight on my leg but winced as pain shot up it .",
+      "top2": {
+        "cosine": [
+          {
+            "id": "chunk_0.txt:245",
+            "similarity": 0.6951709959597425,
+            "sentence": "my legs shot with pain ."
+          },
+          {
+            "id": "chunk_0.txt:161",
+            "similarity": 0.5747607598825278,
+            "sentence": "i pulled my leg close to my body ."
+          }
+        ],
+        "euclidean": [
+          {
+            "id": "chunk_0.txt:245",
+            "distance": 0.7808059833059328,
+            "sentence": "my legs shot with pain ."
+          },
+          {
+            "id": "chunk_0.txt:161",
+            "distance": 0.9222138674918352,
+            "sentence": "i pulled my leg close to my body ."
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "chunk_0.txt:106",
+      "query_sentence": "he kicked the dead thrasher one more time before sheathing his sword .",
+      "top2": {
+        "cosine": [
+          {
+            "id": "chunk_3.txt:12",
+            "similarity": 0.6031763178661409,
+            "sentence": "he swung his sword at the stinger ."
+          },
+          {
+            "id": "chunk_1.txt:720",
+            "similarity": 0.5484085422707762,
+            "sentence": "he did n't sheath it though , because he would need it in the fight ."
+          }
+        ],
+        "euclidean": [
+          {
+            "id": "chunk_3.txt:12",
+            "distance": 0.8908688684434749,
+            "sentence": "he swung his sword at the stinger ."
+          },
+          {
+            "id": "chunk_1.txt:720",
+            "distance": 0.9503593277198363,
+            "sentence": "he did n't sheath it though , because he would need it in the fight ."
+          }
+        ]
+      }
+    }
+  ],
+  "timing_summary_ms": {
+    "cosine": {
+      "min": 0.534200000402052,
+      "max": 1.0973999997077044,
+      "avg": 0.6275299998378614,
+      "std": 0.15905333095893448
+    },
+    "euclidean": {
+      "min": 14.474200001131976,
+      "max": 15.333100000134436,
+      "avg": 14.816879999852972,
+      "std": 0.2731320624281209
+    }
+  }
+}

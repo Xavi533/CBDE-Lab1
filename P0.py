@@ -3,7 +3,7 @@ import psycopg2
 from psycopg2.extras import execute_values
 
 CHUNKS_DIR = "chunks"
-MAX_ROWS = 10000
+MAX_ROWS = 11000
 HOST = os.getenv("PGHOST")
 PORT = int(os.getenv("PGPORT"))
 DBNAME = os.getenv("PGDATABASE")
