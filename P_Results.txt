@@ -4,7 +4,7 @@ max: 0.006 ms
 avg: 0.004 ms
 std: 0.001 ms
 
-P1: storing the enbeddings
+P1: storing the embeddings
 min: 0.960 ms
 max: 4.772 ms
 avg: 1.321 ms
@@ -42,3 +42,28 @@ max: 15.333 ms
 avg: 14.816 ms
 std: 0.273 ms
 
+
+G0: Storing textual data into postgres
+min: 58.702 ms
+max: 67.138 ms
+avg: 63.404 ms
+std: 2.631 ms
+
+G1: storing the embeddings
+min: 701.159 ms
+max: 760.174 ms
+avg: 734.671 ms
+std: 20.086 ms
+
+G2: top-2 similar
+Cosine:
+min: 6.654 ms
+max: 21.852 ms
+avg: 9.664 ms
+std: 4.266 ms
+
+Euclidean:
+min: 6.608 ms
+max: 9.342 ms
+avg: 7.921 ms
+std: 0.981 ms
