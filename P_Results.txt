@@ -1,0 +1,44 @@
+P0: Storing textual data into postgres
+min: 0.004 ms
+max: 0.006 ms
+avg: 0.004 ms
+std: 0.001 ms
+
+P1: storing the enbeddings
+min: 0.960 ms
+max: 4.772 ms
+avg: 1.321 ms
+std: 0.258 ms
+
+P2: top-2 similar
+Cosine:
+min: 0.510 ms
+max: 0.695 ms
+avg: 0.585 ms
+std: 0.062 ms
+
+Euclidean: 
+min: 18.503 ms
+max: 19.478 ms
+avg: 18.833 ms
+std: 0.262 ms
+
+C0:
+min: 9.002 ms
+max: 9.335 ms
+avg: 9.183 ms
+std: 0.104 ms
+
+C2:
+cosine
+min: 0.534 ms 
+max: 1.097 ms
+avg: 0.627 ms
+std: 0.159 ms
+
+euclidean
+min: 14.474 ms
+max: 15.333 ms
+avg: 14.816 ms
+std: 0.273 ms
+
