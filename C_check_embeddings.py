@@ -2,7 +2,7 @@ import chromadb
 from chromadb.config import Settings
 
 persist_dir = "./chroma_db"
-collection_name = "bookcorpus_chunks"
+collection_name = "chunks"
 batch_size = 1000
 
 client = chromadb.PersistentClient(path=persist_dir, settings=Settings(allow_reset=False))
