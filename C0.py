@@ -1,37 +1,35 @@
-import os
-import glob
-import chromadb
-from chromadb.config import Settings
+import os, glob, time, statistics, chromadb
 
-def read_chunks(folder):
-    files = sorted(glob.glob(os.path.join(folder, "chunk_*.txt")))
-    for path in files:
-        with open(path, "r", encoding="utf-8") as f:
-            lines = [ln.strip() for ln in f if ln.strip()]
-            yield os.path.basename(path), lines
+client = chromadb.PersistentClient(path="chroma_db")
+collection = client.get_or_create_collection(name="chunks")
 
-def batched(iterable, n):
-    batch = []
-    for x in iterable:
-        batch.append(x)
-        if len(batch) == n:
-            yield batch
-            batch = []
-    if batch:
-        yield batch
+files = sorted(glob.glob(os.path.join("chunks", "chunk_*.txt")))
+documents, metadatas, ids = [], [], []
+i = 0
+for fp in files:
+    with open(fp, "r", encoding="utf-8", errors="ignore") as f:
+        for ln, line in enumerate(f, start=1):
+            text = line.strip()
+            if not text:
+                continue
+            documents.append(text)
+            metadatas.append({"file": os.path.basename(fp), "line": ln})
+            ids.append(f"line_{i}")
+            i += 1
 
-def main():
-    data_dir = "chunks"
-    persist_dir = "./chroma_db"
-    client = chromadb.PersistentClient(path=persist_dir, settings=Settings(allow_reset=False))
-    collection = client.get_or_create_collection(name="bookcorpus_chunks", metadata={"source": "chunks_txt"})
-    for fname, sentences in read_chunks(data_dir):
-        ids = [f"{fname}:{i}" for i in range(len(sentences))]
-        metadatas = [{"file": fname, "line": i} for i in range(len(sentences))]
-        for b_ids, b_docs, b_meta in zip(batched(ids, 1000), batched(sentences, 1000), batched(metadatas, 1000)):
-            collection.add(ids=b_ids, documents=b_docs, metadatas=b_meta)
-    count = collection.count()
-    print(count)
+batch = 1000
+times = []
+for start in range(0, len(documents), batch):
+    end = start + batch
+    t0 = time.perf_counter()
+    collection.add(documents=documents[start:end], metadatas=metadatas[start:end], ids=ids[start:end])
+    t1 = time.perf_counter()
+    times.append(t1 - t0)
 
-if __name__ == "__main__":
-    main()
+total = len(documents)
+print("Inserted:", total)
+print("Batches:", len(times))
+print("Min time (s):", round(min(times), 6))
+print("Max time (s):", round(max(times), 6))
+print("Avg time (s):", round(statistics.mean(times), 6))
+print("Std dev (s):", round(statistics.pstdev(times), 6))
