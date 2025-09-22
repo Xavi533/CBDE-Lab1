@@ -1,26 +1,35 @@
-import chromadb
-from chromadb.config import Settings
-from sentence_transformers import SentenceTransformer
+import os, glob, time, statistics, chromadb
 
-def main():
-    persist_dir = "./chroma_db"
-    collection_name = "bookcorpus_chunks"
-    batch_size = 1000
-    client = chromadb.PersistentClient(path=persist_dir, settings=Settings(allow_reset=False))
-    collection = client.get_or_create_collection(name=collection_name, metadata={"source": "chunks_txt"})
-    model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
-    offset = 0
-    while True:
-        res = collection.get(include=["documents"], limit=batch_size, offset=offset)
-        ids = res.get("ids", [])
-        docs = res.get("documents", [])
-        if not ids:
-            break
-        emb = model.encode(docs)
-        emb = [e.tolist() for e in emb]
-        collection.update(ids=ids, embeddings=emb)
-        offset += len(ids)
-    print(collection.count())
+client = chromadb.PersistentClient(path="chroma_db")
+collection = client.get_or_create_collection(name="chunks")
 
-if __name__ == "__main__":
-    main()
+files = sorted(glob.glob(os.path.join("chunks", "chunk_*.txt")))
+documents, metadatas, ids = [], [], []
+i = 0
+for fp in files:
+    with open(fp, "r", encoding="utf-8", errors="ignore") as f:
+        for ln, line in enumerate(f, start=1):
+            text = line.strip()
+            if not text:
+                continue
+            documents.append(text)
+            metadatas.append({"file": os.path.basename(fp), "line": ln})
+            ids.append(f"line_{i}")
+            i += 1
+
+batch = 1000
+times = []
+for start in range(0, len(documents), batch):
+    end = start + batch
+    t0 = time.perf_counter()
+    collection.add(documents=documents[start:end], metadatas=metadatas[start:end], ids=ids[start:end])
+    t1 = time.perf_counter()
+    times.append(t1 - t0)
+
+total = len(documents)
+print("Inserted:", total)
+print("Batches:", len(times))
+print("Min time (s):", round(min(times), 6))
+print("Max time (s):", round(max(times), 6))
+print("Avg time (s):", round(statistics.mean(times), 6))
+print("Std dev (s):", round(statistics.pstdev(times), 6))
