@@ -31,16 +31,17 @@ std: 0.104 ms
 
 C2:
 cosine
-min: 0.534 ms 
-max: 1.097 ms
-avg: 0.627 ms
-std: 0.159 ms
+min: 0.467 ms
+max: 0.722 ms
+avg: 0.615 ms 
+std: 0.074 ms
 
-euclidean
-min: 14.474 ms
-max: 15.333 ms
-avg: 14.816 ms
-std: 0.273 ms
+euclidean:
+min: 13.989 ms
+max: 16.200 ms
+avg: 14.665 ms
+std: 0.610 ms
+
 
 
 G0: Storing textual data into postgres
